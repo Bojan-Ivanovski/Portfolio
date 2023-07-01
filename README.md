@@ -1,39 +1,40 @@
-# Portfolio
+# Portfolio Project
 Welcome to my personal portfolio on GitHub! This is where I showcase my projects, achievements, and growth as a student in Computer Engineering. This project is made for my college classes but I also use it personally.
 It started as a college class project but has grown into a platform for sharing my work and skills. Take a look at my projects, code, and documentation to learn more about what I do. Feel free to reach out for questions or collaboration opportunities.
 
-## Available Scripts
-In the project directory, you can run:
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### `npm start`
+## Features
+- Home page 
+- About me page
+- Projects page
+- Contact page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+1. First clone the github reposetory.
+2. To install dependency run : 
+   ''' npm install '''
+3. After that you can get coding :)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+1. To run the app in developer mode :
+   ''' npm run '''
+2. To build the app :
+   ''' npm build '''
 
-### `npm test`
+## Contributing
+I appreciate your interest in contributing to this project. If you would like to contribute submit a pull request.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
+This project is licensed under the GNU General Public License v3.0. Feel free to use the code as a reference or modify it for your own personal use.
 
-### `npm run build`
+## Contact
+If you have any questions, feedback, or would like to connect, all my info is on my portfolio page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Thank you for visiting my portfolio project! I hope you enjoy exploring my work and learning more about me. Happy browsing!
