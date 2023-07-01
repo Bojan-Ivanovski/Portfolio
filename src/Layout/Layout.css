@@ -1,0 +1,118 @@
+.Layout
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.Heading
+{
+    width: 100vw;
+    position: absolute;
+    user-select: none;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    gap: 40px;
+    animation-name: loadTop;
+    animation-duration: 2s;
+}
+
+.Heading p
+{
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Sacramento', cursive;
+}
+
+
+.Heading h3, .Scroll h3
+{
+    cursor: pointer;
+    font-weight: 550;
+    font-size: 18px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.Polls
+{
+    top: 45%;
+    right: 20px;
+    position: absolute;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    animation-name: loadSide;
+    animation-duration: 4s;
+}
+
+.Poll
+{
+    
+    margin: 5px;
+    width: 60px;
+    height: 5px;
+    border-radius: 5px;
+    border: 3px solid #AFD3E2;
+    background-color: #AFD3E2;
+}
+
+.Scroll
+{
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    animation-name: scrollTextPopUp;
+    animation-duration: 2s;
+}
+
+.Scroll h3
+{
+    transform: rotate(90deg);
+}
+
+.Scroll-Poll
+{
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    height: 130px;
+    width: 5px;
+    background-color: #AFD3E2;
+    animation-name: scrollPopUp;
+    animation-duration: 2s;
+}
+
+.Heading p:hover, .Heading h3:hover {color: rgba(0, 0, 0, 0.5);}
+.Poll-Active{background-color: #19A7CE; border-color: #19A7CE;width: 120px;}
+.Poll:hover{cursor: pointer;background-color: #19A7CE; border-color: #19A7CE;}
+.LightMode-Color{color: #146C94;}
+.LightMode-BackColor{background-color: #F6F1F1;}
+
+@keyframes scrollPopUp {
+    from{bottom: -200px;}
+    to{bottom: 0px;}
+}
+
+@keyframes scrollTextPopUp {
+    from{bottom: -200px;}
+    to{bottom: 20%;}
+}
+
+@keyframes loadSide {
+    from{right: -200px}
+    to{right: 20px}
+}
+
+@keyframes loadTop {
+    from{top: -100px}
+    to{top: 0;}
+}
+
+@media screen and (max-width: 600px)
+{
+    .Heading{display: none;}
+}
