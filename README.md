@@ -19,14 +19,14 @@ It started as a college class project but has grown into a platform for sharing 
 ## Installation
 1. First clone the github reposetory.
 2. To install dependency run : 
-   ''' npm install '''
+   ``` npm install ```
 3. After that you can get coding :)
 
 ## Usage
 1. To run the app in developer mode :
-   ''' npm run '''
+   ``` npm run ```
 2. To build the app :
-   ''' npm build '''
+   ``` npm build ```
 
 ## Contributing
 I appreciate your interest in contributing to this project. If you would like to contribute submit a pull request.
