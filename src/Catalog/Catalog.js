@@ -14,9 +14,9 @@ export default function Catalog(props)
     return(
         <>
             <div className="Head">
-                <a href="/"><span className="material-symbols-outlined Control" style={{marginLeft:"20px"}}>start</span></a>
+                <a href="Portfolio/#/"><span className="material-symbols-outlined Control" style={{marginLeft:"20px"}}>start</span></a>
                 <p style={{flex:1}}></p>
-                <a href="/"><p className="Name" style={{marginRight:"20px"}}>Bojan Ivanovski</p></a>
+                <a href="Portfolio/#/"><p className="Name" style={{marginRight:"20px"}}>Bojan Ivanovski</p></a>
             </div>
             <div className="Catalog">
                 <h1 className="Handle">CATALOG</h1>

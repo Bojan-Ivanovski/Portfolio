@@ -107,9 +107,9 @@ export default function Subpage(props)
     return(
         <>
             <div className="Head">
-                <a href="/"><span class="material-symbols-outlined Control" style={{marginLeft:"20px"}}>start</span></a>
+                <a href="Portfolio/#/"><span class="material-symbols-outlined Control" style={{marginLeft:"20px"}}>start</span></a>
                 <p style={{flex:1}}></p>
-                <a href="/"><p className="Name" style={{marginRight:"20px"}}>Bojan Ivanovski</p></a>
+                <a href="Portfolio/#/"><p className="Name" style={{marginRight:"20px"}}>Bojan Ivanovski</p></a>
             </div>
             <div className="Subpage">
             
