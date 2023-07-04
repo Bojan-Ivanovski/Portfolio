@@ -1,6 +1,6 @@
 import React, {useState } from "react";
 import ReactDOM from "react-dom/client"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Home from "./Home/Home";
 import AboutMe from "./AboutMe/AboutMe";
@@ -38,11 +38,11 @@ function MainPage()
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
             <Route path="/*" element={<MainPage></MainPage>}/>
             <Route path="MoreAboutMe" element={<MoreAboutMe></MoreAboutMe>}/>
             <Route path="Projects" element={<Catalog></Catalog>}/>
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 )

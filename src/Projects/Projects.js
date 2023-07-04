@@ -39,7 +39,7 @@ export default function Projects(props)
                 <div style={{width: "92%"}}>
                     <h1>These are just my latest projects</h1>
                     <p style={{height:"100px"}}>Check out all of my projects in the projects catalog</p>
-                    <a href="/Projects"><button>Projects Catalog</button></a>
+                    <a href="/#/Projects"><button>Projects Catalog</button></a>
                 </div>
             </div>
         </div>
