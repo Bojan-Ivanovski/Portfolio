@@ -1,0 +1,94 @@
+.Contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;    
+    height: 100vh;
+    gap: 50px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.Contact form
+{
+    position: absolute;
+    gap: 20px;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+    animation: FormLeft 2s;
+}
+
+.Move
+{
+    position: absolute;
+    margin-top: -183px;
+    left: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: DivTop 2s;
+}
+
+.Move div
+{
+    background-color: #F6F1F1;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.Move :nth-child(3)
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button
+{
+    cursor: pointer;
+    font-size: 16px;
+    color: inherit;
+    padding: 10px 20px 10px 20px;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: #146b9485;
+}
+
+input
+{
+    font-size: 15px;
+    width: 350px;
+    padding: 15px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+textarea
+{
+    resize: none;
+    font-size: 15px;
+    width: 350px;
+    height: 150px;
+    padding: 15px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.Contact h2{font-weight: 500;margin-bottom: 0;}
+.Contact h3{font-weight: 500;}
+.Contact p{font-size: 15px;}
+
+@keyframes FormLeft
+{
+    from{left: -100%;}
+    to{left: 150px;}
+}
+
+@keyframes DivTop
+{
+    from{transform: translateY(-1000%);}
+    to{transform: translateY(0);}
+}
+
