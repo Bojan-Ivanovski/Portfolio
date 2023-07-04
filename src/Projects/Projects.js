@@ -22,6 +22,7 @@ export default function Projects(props)
     const cards = Info.map((data, index)=><Card key={index} {...data}></Card>)
     const backCard = () => setCurrent((prev) => prev === 0 ? 0 : prev-1)
     const nextCard = () => setCurrent((prev) => prev === cards.length-1 ? cards.length-1 : prev+1)
+    const url = window.location.href;
 
     return(
         <>
@@ -39,7 +40,7 @@ export default function Projects(props)
                 <div style={{width: "92%"}}>
                     <h1>These are just my latest projects</h1>
                     <p style={{height:"100px"}}>Check out all of my projects in the projects catalog</p>
-                    <a href="Portfolio/#/Projects"><button>Projects Catalog</button></a>
+                    <a href={url+"/#/Projects"}><button>Projects Catalog</button></a>
                 </div>
             </div>
         </div>
