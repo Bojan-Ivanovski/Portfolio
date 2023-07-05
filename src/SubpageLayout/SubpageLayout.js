@@ -104,12 +104,13 @@ export default function Subpage(props)
         else
             goToSlide(0)
     })
+    const url = window.location.href;
     return(
         <>
             <div className="Head">
-                <a href="Portfolio/#/"><span class="material-symbols-outlined Control" style={{marginLeft:"20px"}}>start</span></a>
+                <a href={url.replace("#/MoreAboutMe","")}><span class="material-symbols-outlined Control" style={{marginLeft:"20px"}}>start</span></a>
                 <p style={{flex:1}}></p>
-                <a href="Portfolio/#/"><p className="Name" style={{marginRight:"20px"}}>Bojan Ivanovski</p></a>
+                <a href={url.replace("/#/MoreAboutMe","")}><p className="Name" style={{marginRight:"20px"}}>Bojan Ivanovski</p></a>
             </div>
             <div className="Subpage">
             
