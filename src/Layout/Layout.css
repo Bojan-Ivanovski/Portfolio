@@ -34,6 +34,7 @@
     font-size: 18px;
     font-family: 'Chakra Petch', sans-serif;
 }
+.Scroll h3 {cursor: default;}
 
 a
 {
@@ -120,7 +121,7 @@ a
     to{top: 0;}
 }
 
-@media screen and (max-width: 600px)
-{
-    .Heading{display: none;}
+@keyframes loadTopMobile {
+    from{top: -100px}
+    to{top: 65px;}
 }

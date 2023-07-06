@@ -21,11 +21,3 @@
     to {font-size: 86;}
 }
 
-@media screen and (max-width: 600px)
-{
-    .Home h1
-    {
-        font-size: 20px;
-    }
-}
-

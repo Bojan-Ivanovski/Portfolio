@@ -15,7 +15,6 @@
     background-color: #F6F1F1;
     width: 400px;
     height: 400px;
-    margin-left: 100px;
     display: flex;
     align-items: center;
     animation-name: Top;
@@ -32,7 +31,6 @@
     background-color: #F6F1F1;
     width: 100px;
     height: 300px;
-    
     animation-name: Right;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0, 0.82, 0.165, 1);
@@ -48,7 +46,6 @@
     background-color: #F6F1F1;
     width: 100px;
     height: 300px;
-    
     animation-name: Left;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0, 0.82, 0.165, 1);
@@ -69,21 +66,18 @@
     left: 18px;
 }
 
-.Card canvas
+.CardMove
 {
-    background-color: #19A7CE;
-    width: 300px;
-    height: 260px;
-    background-position: center;
-    background-size:cover;
-
+    position: absolute;
+    left: 100px;
+    z-index: 1;
 }
 
 .Card div
 {
-    margin-left: 25px;
+    padding: 20px;
     font-family: 'Chakra Petch', sans-serif;
-    width: 85%;
+    width: 100%;
 }
 
 .Card div p
@@ -121,6 +115,18 @@
     animation: AnimateFall 1s;
     animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19)
 }
+
+.MobileP{display: none;}
+
+.DiffCard
+{
+    margin:0;
+    width:565px;
+    height:300px;
+    position: absolute;
+    left: 600px;
+}
+.DiffCard div p {height: 100px;}
 
 @keyframes AnimateFall {
     0%{transform: translate(0,0)}

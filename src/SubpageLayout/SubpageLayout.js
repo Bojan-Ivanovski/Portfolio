@@ -89,6 +89,7 @@ function ReachOut()
 
 export default function Subpage(props)
 {
+    window.scrollTo(0,0);
     const [SlideCount, setSlideCount] = useState(0)
     const goToSlide = (n) => {setSlideCount(n)}
     const slides = [<General/>, <Experience/>, <Hobbies/>,<ReachOut/>]
@@ -110,7 +111,7 @@ export default function Subpage(props)
             <div className="Head">
                 <a href={url.replace("#/MoreAboutMe","")}><span class="material-symbols-outlined Control" style={{marginLeft:"20px"}}>start</span></a>
                 <p style={{flex:1}}></p>
-                <a href={url.replace("/#/MoreAboutMe","")}><p className="Name" style={{marginRight:"20px"}}>Bojan Ivanovski</p></a>
+                <a href={url.replace("#/MoreAboutMe","")}><p className="Name" style={{marginRight:"20px"}}>Bojan Ivanovski</p></a>
             </div>
             <div className="Subpage">
             

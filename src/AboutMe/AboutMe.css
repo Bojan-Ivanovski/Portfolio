@@ -34,18 +34,21 @@
 
 .Handle
 {
+    text-align: left;
+    width: 100%;
     font-weight: 400;
     position: absolute;
+    padding: 5px;
+    margin-left: 5px;
     font-size: 44px;
     font-family: 'Orbitron', sans-serif;
-    bottom: 2%;
-    left: 2%;
     animation: HandleShow 2s;
+    bottom: 0;
 }
 
 @keyframes HandleShow {
     from{bottom: -100px;}
-    to{bottom: 2%;}
+    to{bottom: 0;}
 }
 
 @keyframes AnimateShow {

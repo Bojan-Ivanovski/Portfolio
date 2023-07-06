@@ -46,6 +46,7 @@
 button
 {
     cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
     font-size: 16px;
     color: inherit;
     padding: 10px 20px 10px 20px;
@@ -58,6 +59,8 @@ input::placeholder, textarea::placeholder
 
 input
 {
+    color: #146b94;
+    font-family: 'Chakra Petch', sans-serif;
     font-size: 15px;
     width: 350px;
     padding: 15px;
@@ -67,6 +70,8 @@ input
 
 textarea
 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #146b94;
     resize: none;
     font-size: 15px;
     width: 350px;
@@ -80,6 +85,45 @@ textarea
 .Contact h3{font-weight: 500;}
 .Contact p{font-size: 15px;}
 
+.ContactMobile
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    height: 100vh;
+    gap: 50px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.ContactMobile select
+{
+    color: #146b94;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 18px;
+    width: 350px;
+    padding: 8px 15px 8px 15px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+    text-align: center;
+    animation: Right 2s;
+}
+
+.ContactMobile form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ContactMobile .Move{position: static; margin-top: 0;}
+.ContactMobile input{margin: 5px;}
+.ContactMobile textarea{margin: 5px;}
+.ContactMobile button{margin: 5px;padding: 5px 50px 5px 50px;}
+
+
 @keyframes FormLeft
 {
     from{left: -100%;}
@@ -92,3 +136,14 @@ textarea
     to{transform: translateY(0);}
 }
 
+@keyframes Left
+{
+    from{transform: translateX(-1000%);}
+    to{transform: translateX(0);}
+}
+
+@keyframes Right
+{
+    from{transform: translateX(1000%);}
+    to{transform: translateX(0);}
+}

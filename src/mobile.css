@@ -1,0 +1,67 @@
+/*Home and Layout*/
+@media screen and (max-width: 600px)
+{
+    .Poll{width: 20px;}
+    .Poll-Active{width: 40px;}
+    .Polls
+    {
+        top: 65px; 
+        right: -40px; 
+        z-index: 3; 
+        transform: rotate(270deg);
+        animation-name: loadTopMobile;
+        animation-duration: 2s;
+    }
+    .Home h1{font-size: 30px;}
+    .Heading h3{display: none;}
+    .Handle{font-size: 35px; text-align: center;}
+}
+
+/*About Me*/
+@media screen and (max-width: 600px)
+{    
+    .AboutMe{justify-content: center;}
+    .AboutMe div{margin: 0; padding: 35px;font-size: 16px;}
+    .AboutMe div h1{font-size: 26px; text-align:left;}
+}
+
+
+
+/*Projects*/
+@media screen and (max-width: 600px)
+{    
+    .Projects{flex-direction: column; justify-content: center; gap: 10px;}
+    .Card{position: static;width: 100%;height: auto;}
+    .Card p{display: none;}
+    .NextPanel,.PrevPanel,.NextPanel:hover, .PrevPanel:hover{height:150px ;width: 50px;top: 22.5%;}
+    .NextPanel{left: 83.5%;}
+    .PrevPanel{left: 2.5%;}
+    .NextPanel:hover{left: 83.5%;}
+    .PrevPanel:hover{left: 2.5%;}
+    .Position{left: 20%}
+    .DiffCard div{width: 100%;}
+    .DiffCard{width: 80%; height: 210px;}
+    .DiffCard h1 {font-size: 20px;}
+    .DiffCard div p {height: 50px;display: inline;}
+    .CardMove{position: static;width: 80%;}
+    .MobileP{display: block; font-size: 15px; font-weight: 400;}
+}
+
+
+/*Contact*/
+@media screen and (max-width: 600px)
+{    
+    label{display: none;}
+    .Move h2 {display: none;}
+    .Contact{display: none;}
+    .ContactMobile{display: flex;}
+    .ContactMobile select{width: 80%;}
+    .ContactMobile form {animation: Left 2s;}
+    .ContactMobile .Move {animation: Right 2s;}
+    .ContactMobile input {width: 80%;}
+    .ContactMobile textarea {width: 80%;}
+    .ContactMobile .Move {width: 80%;}
+    .ContactMobile .Move div:nth-child(3) {flex-direction: column; justify-content: center; }
+}
+
+

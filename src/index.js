@@ -8,7 +8,9 @@ import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import MoreAboutMe from "./SubpageLayout/SubpageLayout";
 import Catalog from "./Catalog/Catalog";
-import "./index.css";
+import "./index.css"
+import "./zoom.css"
+import "./mobile.css"
 import "./Backgrounds/Background1.css"
 import "./Backgrounds/Background2.css"
 
