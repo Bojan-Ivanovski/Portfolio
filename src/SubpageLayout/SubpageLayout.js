@@ -89,7 +89,6 @@ function ReachOut()
 
 export default function Subpage(props)
 {
-    window.scrollTo(0,0);
     const [SlideCount, setSlideCount] = useState(0)
     const goToSlide = (n) => {setSlideCount(n)}
     const slides = [<General/>, <Experience/>, <Hobbies/>,<ReachOut/>]

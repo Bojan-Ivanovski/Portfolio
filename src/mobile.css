@@ -33,7 +33,7 @@
     .Projects{flex-direction: column; justify-content: center; gap: 10px;}
     .Card{position: static;width: 100%;height: auto;}
     .Card p{display: none;}
-    .NextPanel,.PrevPanel,.NextPanel:hover, .PrevPanel:hover{height:150px ;width: 50px;top: 22.5%;}
+    .NextPanel,.PrevPanel,.NextPanel:hover, .PrevPanel:hover{height:150px ;width: 50px;top: 22.5%z;}
     .NextPanel{left: 83.5%;}
     .PrevPanel{left: 2.5%;}
     .NextPanel:hover{left: 83.5%;}
@@ -42,7 +42,7 @@
     .DiffCard div{width: 100%;}
     .DiffCard{width: 80%; height: 210px;}
     .DiffCard h1 {font-size: 20px;}
-    .DiffCard div p {height: 50px;display: inline;}
+    .DiffCard div p {height: 50px;display: block;}
     .CardMove{position: static;width: 80%;}
     .MobileP{display: block; font-size: 15px; font-weight: 400;}
 }
