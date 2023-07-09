@@ -24,7 +24,7 @@ It started as a college class project but has grown into a platform for sharing 
 
 ## Usage
 1. To run the app in developer mode :
-   ``` npm run ```
+   ``` npm start ```
 2. To build the app :
    ``` npm build ```
 
