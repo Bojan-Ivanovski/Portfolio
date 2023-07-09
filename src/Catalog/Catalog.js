@@ -1,7 +1,20 @@
 import React from "react";
 import "./Catalog.css"
-import {Card} from "../Projects/Projects"
 import info from "./CatalogInfo";
+
+
+function Card(props)
+{
+    return(
+        <div className="Card">
+            <div>
+                <h1>{props.Title}</h1>
+                <p style={{display: "block"}}>{props.Description}</p>
+                <a href={props.Link}><button disabled={props.Link ? false : true}>Check it out on github</button></a>
+            </div>
+        </div>
+    )
+}
 
 export default function Catalog(props)
 {

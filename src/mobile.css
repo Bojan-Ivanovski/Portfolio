@@ -65,3 +65,21 @@
 }
 
 
+/*More About Me*/
+@media screen and (max-width: 600px)
+{
+    .Subpage main{align-items: center; padding: 7%;}
+    .General{margin: 0;}
+    .Experience{margin: 0;}
+    .Hobbies{margin: 0;}
+    .ReachOut{margin: 0;}
+}
+
+/*More About Me*/
+@media screen and (max-width: 600px)
+{
+    .Holder{height: 80% ;}
+    .Holder main:nth-child(1){margin-top: 0;}
+    .Holder main:nth-last-child(1){margin-bottom: 0;}
+    .Holder main {flex-direction: column;}
+}
