@@ -1,6 +1,7 @@
 # Portfolio Project
 Welcome to my personal portfolio on GitHub! This is where I showcase my projects, achievements, and growth as a student in Computer Engineering. This project is made for my college classes but I also use it personally.
 It started as a college class project but has grown into a platform for sharing my work and skills. Take a look at my projects, code, and documentation to learn more about what I do. Feel free to reach out for questions or collaboration opportunities.
+This project was created with React.js
 
 ## Table of Contents
 - [Features](#features)
