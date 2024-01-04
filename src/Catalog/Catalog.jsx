@@ -10,7 +10,11 @@ function Card(props)
             <div>
                 <h1>{props.Title}</h1>
                 <p style={{display: "block"}}>{props.Description}</p>
-                <a href={props.Link}><button disabled={props.Link ? false : true}>Check it out on github</button></a>
+                {
+                props.LinkOther ? 
+                <a href={props.LinkOther}><button>Check it out</button></a>
+                :<a href={props.Link}><button disabled={props.Link ? false : true}>Check it out on github</button></a>
+                }
             </div>
         </div>
     )

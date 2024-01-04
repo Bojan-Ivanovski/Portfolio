@@ -1,6 +1,10 @@
 const info = [
     [
         {
+            Title:"Bnote (Ongoing)",
+            Description:"This is a financial managment application using React, Redux state menagment, and Firebase. The application allows users to securly manage their finances, track expenses, and set budget goals. The application also incorporates features like transaction history, categorization, and analytics. (This project is not yet finished and is still an ongoin project but there is a preview by clicking the button below)",
+            LinkOther:"https://bnote-app-efe59.web.app"
+        },{
             Title:"Webbing",
             Description:"This is a simple chat application built using .NET (C#) and React. The application allows users to engage in real-time conversations with each other. It provides a user-friendly interface for sending and receiving messages. The website used to be hosted on Azure",
             Link:"https://github.com/Bojan-Ivanovski/Webbing"
@@ -9,11 +13,6 @@ const info = [
             Title:"School-Website",
             Description:"This project was created for a school competition that took place in 2020. I would like to showcase it here and receive feedback on the code. I am aware that there are several flaws with the website and some of the code. However, please take into consideration that this website was my first \"big\" project, developed a few years ago when I had less experience.",
             Link:"https://github.com/Bojan-Ivanovski/School-Website"
-        },
-        {
-            Title:"This Portfolio Website",
-            Description:"This is one of my proudest web development projects to date. This is where I showcase my projects, achievements, and growth as a student in Computer Engineering. This project is made for my college classes but I also use it personally. It started as a college class project but has grown into a platform for sharing my work and skills. Take a look at my projects, code, and documentation to learn more about what I do. Feel free to reach out for questions or collaboration opportunities.",
-            Link:"https://github.com/Bojan-Ivanovski/Portfolio"
         }
     ],
     [
@@ -24,6 +23,11 @@ const info = [
         {
             Title:"Robotic system",
             Description:"The school assigned me this project. I chose to make the robotic system a robotic arm and was in charge of creating the software that controls it. I gained hands-on experience working with C#, the .Net framework and WinForms. As well as the Arduino IDE and C++.",
+        },
+        {
+            Title:"This Portfolio Website",
+            Description:"This is one of my proudest web development projects to date. This is where I showcase my projects, achievements, and growth as a student in Computer Engineering. This project is made for my college classes but I also use it personally. It started as a college class project but has grown into a platform for sharing my work and skills. Take a look at my projects, code, and documentation to learn more about what I do. Feel free to reach out for questions or collaboration opportunities.",
+            Link:"https://github.com/Bojan-Ivanovski/Portfolio"
         }
     ]
 ]

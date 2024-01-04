@@ -11,7 +11,11 @@ export function Card(props)
                 <h1>{props.Title}</h1>
                 <p>{props.Description}</p>
                 <h2 className="MobileP">Check the project catalog for more information or go into desktop mode.</h2>
-                <a href={props.Link}><button disabled={props.Link ? false : true}>Check it out on github</button></a>
+                {
+                props.LinkOther ? 
+                <a href={props.LinkOther}><button>Check it out</button></a>
+                :<a href={props.Link}><button disabled={props.Link ? false : true}>Check it out on github</button></a>
+                }
             </div>
         </div>
     )
