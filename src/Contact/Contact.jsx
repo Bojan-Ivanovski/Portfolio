@@ -20,9 +20,6 @@ function Info()
         <div>
             <h3>Email:</h3>
             <p>0ivanovskibojan@gmail.com</p>
-            <h3 style={{marginTop:"10px"}}>Phone Number</h3>
-            <p>+389 78 326 799</p>
-            <p>078 326 799</p>
         </div>
         <div>
             <h3>Check out my CV</h3>
