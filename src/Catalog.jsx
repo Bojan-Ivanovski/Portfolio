@@ -1,7 +1,6 @@
 import React from "react";
-import "./Catalog.css"
-import info from "./CatalogInfo";
 
+const info = []
 
 function Card(props)
 {

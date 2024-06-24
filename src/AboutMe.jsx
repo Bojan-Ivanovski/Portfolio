@@ -1,6 +1,5 @@
 import React from "react";
-import "./AboutMe.css"
-import Background from "../Backgrounds/Background";
+import Background from "./Backgrounds/Background";
 
 export default function About({onThis})
 {
@@ -8,7 +7,7 @@ export default function About({onThis})
     return(
         <>
         <Background Background="Background1"></Background>
-        <div className="LightMode-Color AboutMe">
+        <div>
             <h1 className="Handle">ABOUT ME</h1>
             <div>
                 <h1>Hello, I'm Bojan Ivanovski</h1>

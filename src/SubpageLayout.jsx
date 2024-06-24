@@ -1,6 +1,5 @@
 import React, {useState} from "react";
-import "./SubpageLayout.css"
-import Background from "../Backgrounds/Background";
+import Background from "./Backgrounds/Background";
 
 function General()
 {

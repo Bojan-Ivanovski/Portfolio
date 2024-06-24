@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "./Projects.css"
-import Background from "../Backgrounds/Background";
-import Info from "./ProjectsInfo"
+import Background from "./Backgrounds/Background";
+const Info = []
 
 export function Card(props)
 {
@@ -32,7 +31,7 @@ export default function Projects(props)
     return(
         <>
         <Background Background="Background2"></Background>
-        <div className="LightMode-Color Projects">
+        <div className="w-full h-screen">
             <h1 className="Handle">PROJECTS</h1>
             <div className="NextPanel" onClick={nextCard}>
                 <span className="material-symbols-outlined Position">double_arrow</span>

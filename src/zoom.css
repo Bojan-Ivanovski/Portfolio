@@ -1,6 +1,0 @@
-@media screen and (max-width: 1100px) and (min-width: 600px)
-{
-    .Home h1{font-size: 56px;}
-    .Poll{width: 30px;border: 1px solid #AFD3E2;}
-    .Poll-Active{width: 60px;}
-}

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Contact.css"
 
 function Form()
 {
@@ -35,7 +34,7 @@ function MobileContact()
     const page = [<Form></Form>,<Info></Info>]
     const change = (events) => {setCount(events.target.value)}
     return (
-        <div className="LightMode-Color ContactMobile">
+        <div className="">
             <select onChange={change}>
                 <option value={0}>Reach me from this website</option>
                 <option value={1}>Reach me personally</option>
@@ -50,7 +49,7 @@ export default function Contact(props)
     return(
         <>
         <h1 className="LightMode-Color Handle">CONTACT</h1>
-        <div className={`LightMode-Color Contact`}>
+        <div className={`h-screen w-full`}>
             <Form></Form>
             <Info></Info>
         </div>
