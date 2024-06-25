@@ -8,27 +8,47 @@
 ::-webkit-scrollbar-track {background: #F6F1F1;}
 ::-webkit-scrollbar-thumb {background: #AFD3E2;}
 ::-webkit-scrollbar-thumb:hover {background: #19A7CE;}
-body{height: 400vh; overflow-x: hidden;}
+body{
+    height: 400vh; 
+    overflow-x: hidden;
+    font-family: 'Chakra Petch';
+    background: #F6F1F1;
+}
 
+.swiper-pagination
+{
+    top: 105% !important;
+}
+
+.SpecialFont
+{
+    font-family: 'Sacramento';
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    
+    font-family: 'Orbitron';
+}
 
 
 .Poll
 {
+    transition: 0.5s;
     cursor: pointer;
     border-radius: 10px;
-    height: 13px;
-    width: 70%;
+    height: 11px;
+    width: 60%;
     background-color: #AFD3E2;
 }
 
 .Poll:hover
 {
-    opacity: 0.8;
+    background-color: #19A7CE;
 }
 
 .Poll-Active
 {
-    transition: 0.5s;
     width: 100%;
     background-color: #19A7CE;
 }

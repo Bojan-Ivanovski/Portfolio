@@ -8,10 +8,12 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import MoreAboutMe from "./SubpageLayout";
 import Catalog from "./Catalog";
+import Aos from "aos";
 
 import "./index.css"
 import "./Backgrounds/Background1.css"
 import "./Backgrounds/Background2.css"
+
 
 function MainPage()
 {
@@ -38,6 +40,7 @@ function MainPage()
 }
 
 
+Aos.init()
 ReactDOM.createRoot(document.getElementById("root")).render(
     <HashRouter>
         <Routes>

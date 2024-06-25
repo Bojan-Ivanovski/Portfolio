@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import  Background  from "./Backgrounds/Background";
 
 function Form()
 {
@@ -48,7 +49,8 @@ export default function Contact(props)
 {
     return(
         <>
-        <h1 className="LightMode-Color Handle">CONTACT</h1>
+        <Background Background="Background1"></Background>
+        <h1 className="absolute bottom-0 left-3 text-[40px] text-body" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-out-back">CONTACT</h1>
         <div className={`h-screen w-full`}>
             <Form></Form>
             <Info></Info>

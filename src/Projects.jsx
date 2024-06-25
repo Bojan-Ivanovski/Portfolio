@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Background from "./Backgrounds/Background";
-const Info = []
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export function Card(props)
 {
     return(
-        <div className="Card">
-            <div>
-                <h1>{props.Title}</h1>
-                <p>{props.Description}</p>
-                <h2 className="MobileP">Check the project catalog for more information or go into desktop mode.</h2>
+        <div className="bg-white flex flex-col w-full swiper-slide" style={{boxShadow: "3px 3px 8px 2px #00000030"}} data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-out-back">
+            <div className="py-4 border-b-2">
+                <h1 className="px-8 line-clamp-1">{props.Title}</h1>
+            </div>
+            <p className="h-[250px] overflow-auto px-8 py-4">{props.Description}</p>
+            <div className="px-8 py-4 border-t-2">
                 {
                 props.LinkOther ? 
                 <a href={props.LinkOther}><button>Check it out</button></a>
@@ -22,33 +27,55 @@ export function Card(props)
 
 export default function Projects(props)
 {
+    const [Info, setInfo] = useState([])
+
+    useEffect(() => {
+        async function getInfo()
+        {
+            const temp = []
+            const response = await fetch("https://bojan-ivanovski.github.io/JSON-Repo/Projects.json")
+            const data = await response.json()            
+            data.forEach((element, index) => {
+                if(index < 3)
+                    temp.push(element)
+            });
+            setInfo(temp);
+        }
+        getInfo()
+    },[])
+
     const [Current, setCurrent] = useState(0)
-    const cards = Info.map((data, index)=><div className="CardMove"><Card key={index} {...data}></Card></div>)
-    const backCard = () => setCurrent((prev) => prev === 0 ? 0 : prev-1)
-    const nextCard = () => setCurrent((prev) => prev === cards.length-1 ? cards.length-1 : prev+1)
+    const cards = Info.map((data, index)=><SwiperSlide key={index}><Card {...data}></Card></SwiperSlide>)
     const url = window.location.href;
+
 
     return(
         <>
         <Background Background="Background2"></Background>
-        <div className="w-full h-screen">
-            <h1 className="Handle">PROJECTS</h1>
-            <div className="NextPanel" onClick={nextCard}>
-                <span className="material-symbols-outlined Position">double_arrow</span>
-            </div>
-            {cards[Current]}
-            <div className="PrevPanel" onClick={backCard}>
-            <span className="material-symbols-outlined Position">keyboard_double_arrow_left</span>
-            </div>
-            <div className="Card DiffCard">
-                <div>
+        <div className="w-full h-full flex flex-col justify-center items-center gap-10 container mx-auto overflow-hidden px-4">
+            <div data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-out-back" className="w-full px-8 py-8  gap-x-10 gap-y-8 max-sm:items-start max-sm:flex-col bg-white flex items-center" style={{boxShadow: "3px 3px 8px 2px #00000030"}}>
+                <div className="flex-1 flex flex-col gap-3">
                     <h1>These are just my latest projects</h1>
                     <p>Check out all of my projects in the projects catalog</p>
-                    <a href={url+"#/Projects"}><button>Projects Catalog</button></a>
                 </div>
+                <a href={url+"#/Projects"}><button>Projects Catalog</button></a>
             </div>
+            <Swiper className="swiper w-full h-auto overflow-visible" modules={[Pagination]} pagination={true} spaceBetween={40} slidesPerView={3} breakpoints={{
+              0:{
+                slidesPerView: 1
+              },
+              600:{
+                slidesPerView: 2
+              },
+              1030:{
+                slidesPerView: 3
+              },
+            }}>
+                {cards}
+            </Swiper>
         </div>
-
+        
+        <h1 className="absolute bottom-0 left-3 text-[40px] text-body" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-out-back">PROJECTS</h1>
         </>
 
     )
