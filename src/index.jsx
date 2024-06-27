@@ -17,9 +17,12 @@ import "./Backgrounds/Background2.css"
 
 function MainPage()
 {
+
+    const [darkMode, setDarkMode] = useState(false)
+
     const [PageCount, setPageCount] = useState(0)
     const goToPage = (n) => {setPageCount(n)}
-    const pages = [<Home></Home>, <AboutMe></AboutMe>, <Projects></Projects>,<Contact></Contact>]
+    const pages = [<Home setMode={setDarkMode}></Home>, <AboutMe></AboutMe>, <Projects></Projects>,<Contact></Contact>]
     const bar = (window.innerHeight /  document.body.offsetHeight ) * window.innerHeight
     const height = (document.querySelector('body').scrollHeight) / 4;
     window.addEventListener('scroll', () => {
@@ -34,7 +37,7 @@ function MainPage()
     })
 
     return (
-    <Layout pCount= {PageCount} onThis={goToPage}>
+    <Layout pCount= {PageCount} onThis={goToPage} mode={darkMode}>
         {pages[PageCount]}
     </Layout>)
 }
