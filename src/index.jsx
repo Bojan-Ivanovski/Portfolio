@@ -17,8 +17,9 @@ import "./Backgrounds/Background2.css"
 
 function MainPage()
 {
-
-    const [darkMode, setDarkMode] = useState(false)
+    if(localStorage.getItem("darkMode") === null)
+        localStorage.setItem("darkMode", false)
+    const [darkMode, setDarkMode] = useState(localStorage.getItem("darkMode") === "true")
 
     const [PageCount, setPageCount] = useState(0)
     const goToPage = (n) => {setPageCount(n)}

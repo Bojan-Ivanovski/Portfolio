@@ -19,8 +19,9 @@ export function Card(props)
             </div>
             <p className="h-[250px] overflow-auto px-8 py-4">{props.Description}</p>
             <div className="px-8 py-4 border-t-2 flex items-center gap-5">
-                {props.GitLink ? <a target="_blank" className="flex-1 hover:opacity-50 transition-opacity duration-300" href={props.GitLink}><img src={github} alt="" width={32}/></a> : <></>}
                 {props.Link ? <a target="_blank" className="hover:opacity-50 transition-opacity duration-300" href={props.Link}><img src={global} alt="" width={32}/></a> : <></>}
+                <span className="flex-1"></span>
+                {props.GitLink ? <a target="_blank" className="hover:opacity-50 transition-opacity duration-300" href={props.GitLink}><img src={github} alt="" width={32}/></a> : <></>}
             </div>
         </div>
     )
