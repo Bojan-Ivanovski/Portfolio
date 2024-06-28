@@ -70,7 +70,7 @@ export default function Catalog(props)
                         </div>
                     </div>
 
-                    <h1 className="absolute bottom-0 left-3 text-[40px] text-body" >CONTACT</h1>
+                    <h1 className="absolute bottom-0 left-3 text-[40px] text-body" >CATALOG</h1>
                 </div>
             </div>
         
