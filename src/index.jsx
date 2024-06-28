@@ -1,24 +1,29 @@
 import React, {useState } from "react";
 import ReactDOM from "react-dom/client"
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout/Layout";
-import Home from "./Home/Home";
-import AboutMe from "./AboutMe/AboutMe";
-import Projects from "./Projects/Projects";
-import Contact from "./Contact/Contact";
-import MoreAboutMe from "./SubpageLayout/SubpageLayout";
-import Catalog from "./Catalog/Catalog";
+import Layout from "./Layout";
+import Home from "./Home";
+import AboutMe from "./AboutMe";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import MoreAboutMe from "./SubpageLayout";
+import Catalog from "./Catalog";
+import Aos from "aos";
+
 import "./index.css"
-import "./zoom.css"
-import "./mobile.css"
 import "./Backgrounds/Background1.css"
 import "./Backgrounds/Background2.css"
 
+
 function MainPage()
 {
+    if(localStorage.getItem("darkMode") === null)
+        localStorage.setItem("darkMode", false)
+    const [darkMode, setDarkMode] = useState(localStorage.getItem("darkMode") === "true")
+
     const [PageCount, setPageCount] = useState(0)
     const goToPage = (n) => {setPageCount(n)}
-    const pages = [<Home></Home>, <AboutMe></AboutMe>, <Projects></Projects>,<Contact></Contact>]
+    const pages = [<Home setMode={setDarkMode}></Home>, <AboutMe></AboutMe>, <Projects></Projects>,<Contact></Contact>]
     const bar = (window.innerHeight /  document.body.offsetHeight ) * window.innerHeight
     const height = (document.querySelector('body').scrollHeight) / 4;
     window.addEventListener('scroll', () => {
@@ -33,12 +38,13 @@ function MainPage()
     })
 
     return (
-    <Layout pCount= {PageCount} onThis={goToPage}>
+    <Layout pCount= {PageCount} onThis={goToPage} mode={darkMode}>
         {pages[PageCount]}
     </Layout>)
 }
 
 
+Aos.init()
 ReactDOM.createRoot(document.getElementById("root")).render(
     <HashRouter>
         <Routes>
