@@ -35,7 +35,7 @@ export default function Projects(props)
         async function getInfo()
         {
             const temp = []
-            const response = await fetch("https://bojan-ivanovski.github.io/JSON-Repo/Projects.json")
+            const response = await fetch("https://bojan-ivanovski.github.io/API-Repo/Projects.json")
             const data = await response.json()            
             data.forEach((element, index) => {
                 if(index < 3)
