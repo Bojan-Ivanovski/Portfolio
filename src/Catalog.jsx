@@ -39,7 +39,7 @@ export default function Catalog(props)
     useEffect(() => {
         async function getInfo()
         {
-            const response = await fetch("https://bojan-ivanovski.github.io/JSON-Repo/Projects.json")
+            const response = await fetch("https://bojan-ivanovski.github.io/API-Repo/Projects.json")
             const data = await response.json()            
             
             setInfo(data);
